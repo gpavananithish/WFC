@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        /*background-image: linear-gradient(
+          to top,
+          rgb(226, 161, 161),
+          rgb(52, 169, 196)
+        );*/
+        background-image: url("https://media.istockphoto.com/id/470303669/photo/hazy-blue-smoke-on-black-background.webp?b=1&s=170667a&w=0&k=20&c=5L7b-3V5zJyeqyRVrXUNrsoz1NqbOCtaFvZ-hAYt0eI=");
+        font-family: Arial, Helvetica, sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        /*background-color: rgb(239, 219, 36);*/
+        float: left;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+      .card img {
+        padding-top: 10px;
+        width: 50%;
+        height: 50%;
+        border-radius: 20px;
+      }
+
+      .card {
+        /*background-color: rgba(255, 255, 255, 0.7);*/
+        background-image: url("https://img.freepik.com/free-vector/blue-gradient-blank-background-business_53876-120508.jpg");
+        backdrop-filter: blur;
+        background-position: top;
+        background-size: cover;
+        border-radius: 25px;
+        border: 3px solid rgba(22, 224, 239, 0.784);
+        border-left-color: rgb(226, 161, 161);
+        border-top-color: rgb(226, 161, 161);
+        border-bottom-color: rgb(52, 169, 196);
+        border-right-color: rgb(52, 169, 196);
+        text-align: center;
+        width: 60%;
+        height: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+        transition: scale 0.45s;
+      }
+      .card:hover {
+        scale: 1.04;
+      }
+
+      .about-section {
+        margin: 2px 2px;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(
+          to right,
+          rgba(192, 225, 238, 0.5),
+          rgba(249, 211, 211, 0.5)
+        );
+        border-radius: 15px;
+        border: 3px solid white;
+        color: rgb(11, 10, 10);
+      }
+      marquee {
+        background-color: rgba(240, 248, 255, 0.9);
+        color: #000;
+        border-radius: 8px;
+        width: 70%;
+      }
+      .about-section .home {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        justify-content: flex-start;
+      }
+      .about-section .home a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: #2f2c2c;
+        transition: 0.3s;
+      }
+      .about-section .home a:hover {
+        background: tomato;
+        color: white;
+      }
+      .container {
+        padding: 0 16px;
+        font-weight: bold;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        border-radius: 4px;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      p .button a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .button:hover {
+        background-color: coral;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="about-section">
+      <div class="about">
+        <h1>ABOUT US</h1>
+        <h2>
+          <marquee direction="right"
+            >NOTE:IF YOU HAVE ANY ISSUES CONTACT US BELOW</marquee
+          >
+        </h2>
+      </div>
+      <div class="home">
+        <img
+          width="30px"
+          height="30px"
+          src="https://icon-library.com/images/home-icon-png/home-icon-png-13.jpg"
+          alt="Homepage"
+        />
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+
+    <h1 style="text-align: center">Our Team</h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="https://shorturl.at/hBSV6" alt="Nithish" />
+          <div class="container">
+            <h2>Nithish</h2>
+            <p>R.No:21FE1A0562</p>
+            <p>Mail:pavan@example.com</p>
+            <p>
+              <button class="button">
+                <a href="mailto:pavan@example.com">Contact</a>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="https://shorturl.at/hBSV6" alt="Ajay" />
+          <div class="container">
+            <h2>Ajay</h2>
+            <p>R.No:21FE1A0505</p>
+            <p>Mail:ajay@example.com</p>
+            <p>
+              <button class="button">
+                <a href="mailto:ajay@example.com">Contact</a>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="https://shorturl.at/hBSV6" alt="Vinay" />
+          <div class="container">
+            <h2>Vinay</h2>
+            <p>R.No:21FE1A0513</p>
+            <p>Mail:vinay@example.com</p>
+            <p>
+              <button class="button">
+                <a href="mailto:vinay@example.com">Contact</a>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="https://shorturl.at/hBSV6" alt="Snehitha" />
+          <div class="container">
+            <h2>Snehitha</h2>
+            <p>R.No:21FE1A0552</p>
+            <p>Mail:snehitha@example.com</p>
+            <p>
+              <button class="button">
+                <a href="snehitha@example.com">Contact</a>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
