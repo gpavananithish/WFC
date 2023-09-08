@@ -42,19 +42,26 @@ header .heading h1{
 .header .links a{
   text-decoration:none;
   padding: 3px 10px;
-  /*background-color: rgb(65, 74, 61,0.7);
-  border-radius: 8px;
-  border: 1px solid white;*/
-  color:black;
+  background: linear-gradient(45deg,#53c1dd,#f3f5f7);
+  border-radius: 6px;
+  border: 1px solid white;
+  color:rgb(106, 141, 141);
   font-weight: bold;
+  box-shadow:4px 4px 4px rgb(165, 163, 163);
   text-transform: uppercase;
   position: relative;
 
 }
+.header .links a:hover{
+  background: none;
+  color: rgb(31, 30, 30);
+  box-shadow: none;
+  border: none;
+}
 .header .links a::before{
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
   height: 4px;
   width: 0;
   background: rgb(7, 96, 212);
@@ -144,8 +151,9 @@ header .heading h1{
   /*background:rgba(18, 203, 228, 0.6);*/
   background:linear-gradient(to top right,rgba(135, 206, 235,0.8),rgba(232, 190, 134, 0.7));
   backdrop-filter:blur;
-  border: 2px solid rgba(239, 247, 252, 0.6);
-  border-radius: 5px;
+  border: 3px solid rgba(239, 247, 252, 0.6);
+  border-color: rgb(228, 229, 230) rgb(228, 229, 230) rgb(252, 196, 123) rgb(229, 192, 144);
+  border-radius: 15px;
   padding: 20px 70px 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -192,6 +200,7 @@ header .heading h1{
   /*background:rgba(153, 172, 177,0.8);*/
   background:rgba(239, 247, 252, 0.6);
   border: 2px solid rgba(18, 203, 228, 0.6);
+  border-color: rgb(155, 205, 255) rgb(155, 217, 241) rgb(234, 229, 223) rgb(225, 223, 220);
   border-radius: 5px;
   transition: scale 0.8s;
 }

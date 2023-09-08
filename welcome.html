@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <title>WFC Welcome page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,300;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: linear-gradient(to bottom, #79eaee, #ffe7e7);
+        background-size: cover;
+      }
+      .div0 {
+        display: inline-flex;
+        justify-content: space-between;
+      }
+      .div0 h1 {
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 5px 5px 10px rgb(179, 204, 204);
+        backdrop-filter: blur;
+        border: 1px solid white;
+        border-radius: 15px;
+        height: 50px;
+        width: 150px;
+        margin-top: 20px;
+        padding: 5px 5px;
+      }
+      section {
+        position: relative;
+        width: 100%;
+        min-width: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .logo {
+        position: relative;
+        max-width: 80px;
+      }
+      header ul {
+        position: relative;
+        display: flex;
+      }
+      header ul li {
+        list-style: none;
+      }
+      header ul li a {
+        display: inline-block;
+        text-align: center;
+        font-weight: 15px;
+        margin-right: 50px;
+        background: rgba(255, 255, 255, 0.3);
+        border: 2px solid white;
+        backdrop-filter: blur;
+        border-radius: 15px;
+        width: 150px;
+        color: #1e1b1b;
+        font-weight: 800;
+        box-shadow: 5px 5px 5px rgb(169, 168, 168);
+        margin-left: 40px;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      header ul li a:hover {
+        font-weight: lighter;
+        background-color: #269567;
+        color: #fff;
+        scale: 1.05;
+      }
+      .container {
+        padding: 50px 0px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container .text-box {
+        position: relative;
+        max-width: 600px;
+      }
+      .container .text-box h2 {
+        color: #333;
+        font-size: 4em;
+        font-weight: 500px;
+      }
+      .container .text-box h2 span {
+        color: #017143;
+        font-size: 1.2em;
+        font-weight: 900;
+      }
+      .container .text-box p {
+        color: #333;
+      }
+      .container .text-box .explore {
+        margin: 10px;
+        padding: 0 10px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        background: linear-gradient(
+          45deg,
+          rgb(108, 202, 239),
+          rgb(224, 162, 172)
+        );
+        color: #fff;
+        width: 250px;
+        height: 40px;
+      }
+      .container .text-box .arrow {
+        width: 50px;
+        height: 50px;
+      }
+      .div1 {
+        display: inline-flex;
+      }
+      .bigcontainer {
+        display: inline-flex;
+      }
+      @media screen and (max-width: 650px) {
+        body {
+          width: 50%;
+        }
+        .bigcontainer {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <div class="div0">
+          <img
+            src="https://www.freeiconspng.com/thumbs/weather-icon-png/weather-icon-png-2.png"
+            class="logo"
+          />
+          <h1>ᴡᴇᴀᴛʜᴇʀ.ɪᴏ</h1>
+        </div>
+
+        <ul>
+          <li><a href="#">Get started</a></li>
+        </ul>
+      </header>
+      <div class="bigcontainer">
+        <div class="container">
+          <div class="text-box">
+            <h2>Welcome<br />To <span>WFC</span></h2>
+            <h3 style="font-weight: lighter">
+              The goal of forecasting is not to predict the future but to tell
+              you what you need to know to take meaningful action in the present
+            </h3>
+            <div class="div1">
+              <p class="explore">Explore our site</p>
+              <a href="index.html"
+                ><img
+                  class="arrow"
+                  src="https://cdn-icons-png.flaticon.com/512/1177/1177531.png"
+                  alt="arrow"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="https://www.pngall.com/wp-content/uploads/11/Weather-PNG-Background.png"
+          alt="icon"
+        />
+      </div>
+    </section>
+  </body>
+</html>

@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://icons-for-free.com/iconfiles/png/512/group+people+team+users+icon-1320196240876938595.png"
+    />
     <style>
       body {
         /*background-image: linear-gradient(
@@ -14,6 +18,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 100vh;
+        overflow: scroll;
         background-position: center;
         margin: 0;
       }
@@ -49,7 +54,7 @@
         backdrop-filter: blur;
         background-position: top;
         background-size: cover;
-        border-radius: 25px;
+        border-radius: 30px 0 30px 0;
         border: 3px solid rgba(22, 224, 239, 0.784);
         border-left-color: rgb(226, 161, 161);
         border-top-color: rgb(226, 161, 161);
@@ -58,7 +63,7 @@
         text-align: center;
         width: 70%;
         height: 60%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 10px 10px 8px 0 hwb(0 97% 3% / 0.767);
         margin: 8px;
         transition: scale 0.45s;
       }
@@ -95,16 +100,20 @@
       }
       .about-section .home a {
         text-decoration: none;
+        text-align: center;
         color: white;
+        margin: 2px;
         font-weight: bold;
-        font-size: 20px;
-        border-radius: 5px;
-        background-color: #2f2c2c;
+        font-size: 30px;
+        border-radius: 6px;
+        width: 150px;
+        height: 40px;
+        background: linear-gradient(45deg, #87adfe, #ff77cd);
         transition: 0.3s;
       }
       .about-section .home a:hover {
-        background: tomato;
-        color: white;
+        box-shadow: 5px 5px 5px rgb(182, 173, 175);
+        color: rgb(37, 37, 37);
       }
       .container {
         padding: 0 16px;
@@ -128,8 +137,8 @@
         display: inline-block;
         padding: 8px;
         color: white;
-        border-radius: 4px;
-        background-color: #000;
+        border-radius: 6px;
+        background: linear-gradient(45deg, #87adfe, #ff77cd);
         text-align: center;
         cursor: pointer;
         width: 100%;
@@ -150,6 +159,10 @@
           display: flex;
           justify-content: center;
         }
+        .about-section .home {
+          display: list-item;
+          padding: 15px 15px;
+        }
       }
     </style>
   </head>
@@ -165,16 +178,18 @@
       </div>
       <div class="home">
         <img
-          width="30px"
-          height="30px"
-          src="https://cdn-icons-png.flaticon.com/128/831/831268.png"
+          width="50px"
+          height="50px"
+          src="https://cdn-icons-png.flaticon.com/128/4175/4175279.png"
           alt="Homepage"
         />
         <a href="index.html">Home</a>
       </div>
     </div>
 
-    <h1 style="text-align: center">Our Team</h1>
+    <h1 style="text-align: center; color: rgb(37, 133, 192)">
+      Our Team Members
+    </h1>
     <div class="row">
       <div class="column">
         <div class="card">
