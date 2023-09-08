@@ -8,7 +8,7 @@
 }
 body{
   background-image:linear-gradient(to left,rgba(8, 57, 90, 0.3),rgba(8, 57, 90, 0.4)),url('https://cutewallpaper.org/22/yosemite-national-park-4k-wallpapers/1111324492.jpg');
-  background-repeat:no-repeat;
+  background-repeat:repeat-y;
   background-size:cover;
   overflow:hidden;
   height: 100vh;
