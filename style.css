@@ -61,7 +61,7 @@ header .heading h1{
 .header .links a::before{
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: -4px;
   height: 4px;
   width: 0;
   background: rgb(7, 96, 212);
@@ -250,7 +250,7 @@ header .heading h1{
     width: calc(100% / 2 - 10px);
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   body{
     overflow: auto;
     height: 180vh;
@@ -271,5 +271,10 @@ header .heading h1{
   }
   .weather-cards .card {
     width: calc(100% / 2 - 10px);
+  }
+  .header .links a{
+    background: none;
+    box-shadow: none;
+    border: none;
   }
 }
