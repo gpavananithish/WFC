@@ -7,7 +7,8 @@
   font-family: 'Open Sans', sans-serif;
 }
 body{
-  background-image:linear-gradient(to left,rgba(8, 57, 90, 0.3),rgba(8, 57, 90, 0.4)),url('https://cutewallpaper.org/22/yosemite-national-park-4k-wallpapers/1111324492.jpg');
+  /*background-image:linear-gradient(to left,rgba(8, 57, 90, 0.3),rgba(8, 57, 90, 0.4)),url('https://cutewallpaper.org/22/yosemite-national-park-4k-wallpapers/1111324492.jpg');*/
+  background-image: url('cloud1.png');
   background-repeat:no-repeat;
   background-size:cover;
   overflow:hidden;
@@ -42,10 +43,10 @@ header .heading h1{
 .header .links a{
   text-decoration:none;
   padding: 3px 10px;
-  background: linear-gradient(45deg,#53c1dd,#f3f5f7);
+  background: linear-gradient(to top,rgb(81, 194, 223),#f3f5f7);
   border-radius: 6px;
   border: 1px solid white;
-  color:rgb(106, 141, 141);
+  color:rgb(32, 33, 33);
   font-weight: bold;
   box-shadow:4px 4px 4px rgb(165, 163, 163);
   text-transform: uppercase;
@@ -61,7 +62,7 @@ header .heading h1{
 .header .links a::before{
   content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: -5px;
   height: 4px;
   width: 0;
   background: rgb(7, 96, 212);
@@ -250,7 +251,7 @@ header .heading h1{
     width: calc(100% / 2 - 10px);
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   body{
     overflow: auto;
     height: 180vh;
@@ -271,12 +272,5 @@ header .heading h1{
   }
   .weather-cards .card {
     width: calc(100% / 2 - 10px);
-  }
-  
-  .header .links a{
-    color:black;
-    background: none;
-    box-shadow: none;
-    border: none;
   }
 }

@@ -15,8 +15,11 @@
         font-family: "Poppins", sans-serif;
       }
       body {
-        background: linear-gradient(to bottom, #79eaee, #ffe7e7);
+        /*background: linear-gradient(to bottom, #79eaee, #ffe7e7);*/
+        background-image: url("background.png");
+        width: 100%;
         background-size: cover;
+        background-repeat: repeat-y;
       }
       .div0 {
         display: inline-flex;
@@ -134,15 +137,29 @@
       .div1 {
         display: inline-flex;
       }
-      .bigcontainer {
-        display: inline-flex;
+      .div1 img:hover {
+        scale: 1.1;
       }
-      @media screen and (max-width: 650px) {
+      .bigcontainer {
+        display: flex;
+        margin: 25px 100px;
+        background: rgba(140, 206, 211, 0.315);
+        box-shadow: 10px 10px 5px rgb(103, 111, 120);
+        border: 1px solid white;
+        padding-left: 20px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+      }
+
+      @media screen and (max-width: 800px) {
         body {
+          overflow: scroll;
           width: 50%;
+          height: 100vh;
         }
         .bigcontainer {
           display: flex;
+          margin: 25px 0;
           flex-direction: column;
         }
       }
@@ -172,6 +189,7 @@
               The goal of forecasting is not to predict the future but to tell
               you what you need to know to take meaningful action in the present
             </h3>
+            <b>Know the Weaher of your Location</b>
             <div class="div1">
               <p class="explore">Explore our site</p>
               <a href="index.html"
@@ -183,10 +201,9 @@
             </div>
           </div>
         </div>
-        <img
-          src="https://www.pngall.com/wp-content/uploads/11/Weather-PNG-Background.png"
-          alt="icon"
-        />
+        <div class="div2">
+          <img src="weather.png" alt="icon" />
+        </div>
       </div>
     </section>
   </body>
