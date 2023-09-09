@@ -273,4 +273,9 @@ header .heading h1{
   .weather-cards .card {
     width: calc(100% / 2 - 10px);
   }
+ .header .links a{
+   background: none;
+   box-shadow: none;
+   border: none;
+ }
 }
