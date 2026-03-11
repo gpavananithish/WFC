@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Weather Forecast</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/831/831268.png" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="welcome.html">
+            <img 
+              id="logo-img"
+              src="https://basmilius.github.io/weather-icons/production/fill/all/clear-day.svg" 
+              alt="Weather App Logo" 
+              style="width: 60px; height: 60px; display: block;"
+            />
+          </a>
+        </div>
+        <div class="heading"><h1>Weather Forecast</h1></div>
+        <div class="links">
+          <a href="index.html" class="nav-btn">Know Weather <i class="fa-solid fa-circle-arrow-right"></i></a>
+          <a href="measures.html">Safety Measures</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome-hero">
+        <div class="hero-main-container">
+          <!-- Dynamic Image Collage Background -->
+          <div class="hero-collage">
+            <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=400" alt="Storm" class="floating-img img-1">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&q=80&w=400" alt="Sunny" class="floating-img img-2">
+            <img src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?auto=format&fit=crop&q=80&w=400" alt="Rainbow" class="floating-img img-3">
+            <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?auto=format&fit=crop&q=80&w=400" alt="Clouds" class="floating-img img-4">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=400" alt="Forest" class="floating-img img-5">
+            <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?auto=format&fit=crop&q=80&w=400" alt="Night Sky" class="floating-img img-6">
+            <img src="https://images.unsplash.com/photo-1504253163759-c23fccaebb55?auto=format&fit=crop&q=80&w=400" alt="Snow" class="floating-img img-7">
+            <img src="https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg" alt="Rainy" class="floating-img img-8">
+          </div>
+
+          <!-- Text Content Overlay -->
+          <div class="content-wrap">
+            <h1><span>Predicting</span> Tomorrow's <span>Weather</span> Today</h1>
+            <p class="hero-subtitle">Our advanced forecasting tools provide precision data to keep you one step ahead.</p>
+            <div class="cta-group">
+              <a href="index.html" class="forecast-btn">
+                Explore Forecast <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <h2 class="section-title">Core Features</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <i class="fa-solid fa-bullseye icon" style="color: #6366f1; font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+            <h3>High Accuracy</h3>
+            <p>Real-time data from OpenWeatherMap ensures you get the most precise local conditions.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-shield-halved icon" style="color: #10b981; font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+            <h3>Safety Intelligence</h3>
+            <p>Custom safety protocols for various weather events, designed to protect everyone.</p>
+          </div>
+          <div class="feature-card">
+            <i class="fa-solid fa-mobile-screen-button icon" style="color: #f59e0b; font-size: 2.5rem; margin-bottom: 20px; display: block;"></i>
+            <h3>Always with You</h3>
+            <p>Fully responsive interface works perfectly on your phone, tablet, or desktop.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Our Aim</h3>
+          <p>Democratizing weather data through intuitive design and life-saving safety precautions for everyone, everywhere.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="index.html">Forecast</a></li>
+            <li><a href="measures.html">Safety Measures</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p>Email: <a href="mailto:contact@weatherpredictor.io" style="color: #1a1a1a; text-decoration: none; font-weight: 600;">contact@weatherpredictor.io</a></p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/gpavananithish/WFC" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Weather Forecast. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      href="https://cdn-icons-png.flaticon.com/128/831/831268.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logo">
+          <a href="welcome.html">
+            <img
+              id="logo-img"
+              src="https://basmilius.github.io/weather-icons/production/fill/all/clear-day.svg"
+              alt="Weather App Logo"
+            />
+          </a>
+        </div>
+        <div class="heading"><h1>Weather Forecast</h1></div>
+        <div class="links">
+          <a href="measures.html" class="measures-btn">Safety Measures <i class="fa-solid fa-shield-halved"></i></a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="main-top">
+        <div class="weather-input">
+          <h3><i class="fa-solid fa-magnifying-glass-location"></i> Enter a City Name</h3>
+          <input
+            class="city-input"
+            type="text"
+            placeholder="E.g., New York, London, Tokyo"
+          />
+          <button class="search-btn">Search</button>
+          <div class="separator"></div>
+          <button class="location-btn"><i class="fa-solid fa-crosshairs"></i> Use Current Location</button>
+        </div>
+        <div class="weather-data">
+          <div class="current-weather">
+            <div class="details">
+              <h2><i class="fa-solid fa-location-dot"></i> City Name (Date)</h2>
+              <h6><i class="fa-solid fa-temperature-half"></i> Temperature: --°C</h6>
+              <h6><i class="fa-solid fa-person-rays"></i> Feels like: --°C</h6>
+              <h6><i class="fa-solid fa-wind"></i> Wind Speed: -- M/S</h6>
+              <h6><i class="fa-solid fa-droplet"></i> Humidity: --%</h6>
+              <h6><i class="fa-solid fa-gauge-high"></i> Pressure: -- hPa</h6>
+              <h6><i class="fa-solid fa-eye"></i> Visibility: -- KM</h6>
+              <h6><i class="fa-solid fa-cloud-rain"></i> Rain Probability: --%</h6>
+            </div>
+            <div class="icon">
+              <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather-icon">
+              <h6>Description</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="days-forecast">
+        <h2><i class="fa-solid fa-calendar-days"></i> 5-Day Forecast</h2>
+        <ul class="weather-cards">
+          <li class="card">
+            <h3>( Date )</h3>
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather-icon"
+            />
+            <h6>Temp: --°C</h6>
+            <h6>Wind: -- M/S</h6>
+            <h6>Humidity: --%</h6>
+          </li>
+          <li class="card">
+            <h3>( Date )</h3>
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather-icon"
+            />
+            <h6>Temp: --°C</h6>
+            <h6>Wind: -- M/S</h6>
+            <h6>Humidity: --%</h6>
+          </li>
+          <li class="card">
+            <h3>( Date )</h3>
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather-icon"
+            />
+            <h6>Temp: --°C</h6>
+            <h6>Wind: -- M/S</h6>
+            <h6>Humidity: --%</h6>
+          </li>
+          <li class="card">
+            <h3>( Date )</h3>
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather-icon"
+            />
+            <h6>Temp: --°C</h6>
+            <h6>Wind: -- M/S</h6>
+            <h6>Humidity: --%</h6>
+          </li>
+          <li class="card">
+            <h3>( Date )</h3>
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="weather-icon"
+            />
+            <h6>Temp: --°C</h6>
+            <h6>Wind: -- M/S</h6>
+            <h6>Humidity: --%</h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Our Aim</h3>
+          <p>Democratizing weather data through intuitive design and life-saving safety precautions for everyone, everywhere.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="index.html">Forecast</a></li>
+            <li><a href="measures.html">Safety Measures</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <p>Email: <a href="mailto:contact@weatherpredictor.io" style="color: #000000; text-decoration: none;font-weight: 600;">contact@weatherpredictor.io</a></p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://github.com/gpavananithish/WFC" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Weather Forecast. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
