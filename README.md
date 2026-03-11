@@ -2,7 +2,6 @@
 
 A premium, cinematic, and mobile-first weather forecasting web application. Designed with high-end aesthetics, smooth animations, and actionable safety protocols.
 
-![Weather Forecast Banner](https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=1200)
 
 ## 🚀 Live Demo
 **Check out the live project here:** [https://gpavananithish.github.io/WFC](https://gpavananithish.github.io/WFC)
